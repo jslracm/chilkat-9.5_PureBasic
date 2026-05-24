@@ -50,6 +50,8 @@ Module CkBinData
   PrototypeC.l cklMs(obj.i, arg1.s)
   PrototypeC.l cklMlls(obj.i, arg1.l, arg2.l, arg3.s)
   PrototypeC.l cklMl(obj.i, arg1.l)
+  PrototypeC.i ckiMs(obj.i, arg1.s)
+  PrototypeC.i ckiMlls(obj.i, arg1.l, arg2.l, arg3.s)
   PrototypeC.i CkBinDataCreate()
   PrototypeC CkBinDataDispose(obj.i)
 
@@ -91,11 +93,11 @@ CompilerEndIf
   Global BinDataClear.cklM = GetFunction(CkBinDataLibId,"CkBinDataU_ClearW")
   Global BinDataContentsEqual.cklMi = GetFunction(CkBinDataLibId,"CkBinDataU_ContentsEqualW")
   Global BinDataFindString.cklMsls = GetFunction(CkBinDataLibId,"CkBinDataU_FindStringW")
-  Global BinDataGetEncoded.cklMs = GetFunction(CkBinDataLibId,"CkBinDataU_getEncodedW")
-  Global BinDataGetEncodedChunk.cklMlls = GetFunction(CkBinDataLibId,"CkBinDataU_getEncodedChunkW")
+  Global BinDataGetEncoded.ckiMs = GetFunction(CkBinDataLibId,"CkBinDataU_getEncodedW")
+  Global BinDataGetEncodedChunk.ckiMlls = GetFunction(CkBinDataLibId,"CkBinDataU_getEncodedChunkW")
   Global BinDataGetEncodedSb.cklMsi = GetFunction(CkBinDataLibId,"CkBinDataU_GetEncodedSbW")
-  Global BinDataGetString.cklMs = GetFunction(CkBinDataLibId,"CkBinDataU_getStringW")
-  Global BinDataGetTextChunk.cklMlls = GetFunction(CkBinDataLibId,"CkBinDataU_getTextChunkW")
+  Global BinDataGetString.ckiMs = GetFunction(CkBinDataLibId,"CkBinDataU_getStringW")
+  Global BinDataGetTextChunk.ckiMlls = GetFunction(CkBinDataLibId,"CkBinDataU_getTextChunkW")
   Global BinDataLoadEncoded.cklMss = GetFunction(CkBinDataLibId,"CkBinDataU_LoadEncodedW")
   Global BinDataLoadFile.cklMs = GetFunction(CkBinDataLibId,"CkBinDataU_LoadFileW")
   Global BinDataRemoveChunk.cklMll = GetFunction(CkBinDataLibId,"CkBinDataU_RemoveChunkW")
@@ -135,3 +137,9 @@ CompilerEndIf
   Procedure.l ckWriteFile(obj.i, path.s) :  ProcedureReturn BinDataWriteFile(obj, path) :  EndProcedure
 EndModule
 
+
+; IDE Options = PureBasic 6.40 (Windows - x64)
+; Folding = -------
+; EnableThread
+; EnableXP
+; DPIAware

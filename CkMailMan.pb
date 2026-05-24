@@ -589,7 +589,7 @@ CompilerEndIf
   Global MailManGetHeadersAsync.ckiMlll = GetFunction(CkMailManLibId,"CkMailManU_GetHeadersAsyncW")
   Global MailManGetMailboxCount.cklM = GetFunction(CkMailManLibId,"CkMailManU_GetMailboxCountW")
   Global MailManGetMailboxCountAsync.ckiM = GetFunction(CkMailManLibId,"CkMailManU_GetMailboxCountAsyncW")
-  Global MailManGetMailboxInfoXml.cklM = GetFunction(CkMailManLibId,"CkMailManU_getMailboxInfoXmlW")
+  Global MailManGetMailboxInfoXml.ckiM = GetFunction(CkMailManLibId,"CkMailManU_getMailboxInfoXmlW")
   Global MailManGetMailboxInfoXmlAsync.ckiM = GetFunction(CkMailManLibId,"CkMailManU_GetMailboxInfoXmlAsyncW")
   Global MailManGetMailboxSize.cklM = GetFunction(CkMailManLibId,"CkMailManU_GetMailboxSizeW")
   Global MailManGetMailboxSizeAsync.ckiM = GetFunction(CkMailManLibId,"CkMailManU_GetMailboxSizeAsyncW")
@@ -613,7 +613,7 @@ CompilerEndIf
   Global MailManLoadXmlEmailString.ckiMs = GetFunction(CkMailManLibId,"CkMailManU_LoadXmlEmailStringW")
   Global MailManLoadXmlFile.ckiMs = GetFunction(CkMailManLibId,"CkMailManU_LoadXmlFileW")
   Global MailManLoadXmlString.ckiMs = GetFunction(CkMailManLibId,"CkMailManU_LoadXmlStringW")
-  Global MailManMxLookup.cklMs = GetFunction(CkMailManLibId,"CkMailManU_mxLookupW")
+  Global MailManMxLookup.ckiMs = GetFunction(CkMailManLibId,"CkMailManU_mxLookupW")
   Global MailManMxLookupAll.ckiMs = GetFunction(CkMailManLibId,"CkMailManU_MxLookupAllW")
   Global MailManOpenSmtpConnection.cklM = GetFunction(CkMailManLibId,"CkMailManU_OpenSmtpConnectionW")
   Global MailManOpenSmtpConnectionAsync.ckiM = GetFunction(CkMailManLibId,"CkMailManU_OpenSmtpConnectionAsyncW")
@@ -631,11 +631,11 @@ CompilerEndIf
   Global MailManPop3NoopAsync.ckiM = GetFunction(CkMailManLibId,"CkMailManU_Pop3NoopAsyncW")
   Global MailManPop3Reset.cklM = GetFunction(CkMailManLibId,"CkMailManU_Pop3ResetW")
   Global MailManPop3ResetAsync.ckiM = GetFunction(CkMailManLibId,"CkMailManU_Pop3ResetAsyncW")
-  Global MailManPop3SendRawCommand.cklMss = GetFunction(CkMailManLibId,"CkMailManU_pop3SendRawCommandW")
+  Global MailManPop3SendRawCommand.ckiMss = GetFunction(CkMailManLibId,"CkMailManU_pop3SendRawCommandW")
   Global MailManPop3SendRawCommandAsync.ckiMss = GetFunction(CkMailManLibId,"CkMailManU_Pop3SendRawCommandAsyncW")
   Global MailManQuickSend.cklMsssss = GetFunction(CkMailManLibId,"CkMailManU_QuickSendW")
   Global MailManQuickSendAsync.ckiMsssss = GetFunction(CkMailManLibId,"CkMailManU_QuickSendAsyncW")
-  Global MailManRenderToMime.cklMi = GetFunction(CkMailManLibId,"CkMailManU_renderToMimeW")
+  Global MailManRenderToMime.ckiMi = GetFunction(CkMailManLibId,"CkMailManU_renderToMimeW")
   Global MailManRenderToMimeBd.cklMii = GetFunction(CkMailManLibId,"CkMailManU_RenderToMimeBdW")
   Global MailManRenderToMimeSb.cklMii = GetFunction(CkMailManLibId,"CkMailManU_RenderToMimeSbW")
   Global MailManSaveLastError.cklMs = GetFunction(CkMailManLibId,"CkMailManU_SaveLastErrorW")
@@ -668,7 +668,7 @@ CompilerEndIf
   Global MailManSmtpNoopAsync.ckiM = GetFunction(CkMailManLibId,"CkMailManU_SmtpNoopAsyncW")
   Global MailManSmtpReset.cklM = GetFunction(CkMailManLibId,"CkMailManU_SmtpResetW")
   Global MailManSmtpResetAsync.ckiM = GetFunction(CkMailManLibId,"CkMailManU_SmtpResetAsyncW")
-  Global MailManSmtpSendRawCommand.cklMssl = GetFunction(CkMailManLibId,"CkMailManU_smtpSendRawCommandW")
+  Global MailManSmtpSendRawCommand.ckiMssl = GetFunction(CkMailManLibId,"CkMailManU_smtpSendRawCommandW")
   Global MailManSmtpSendRawCommandAsync.ckiMssl = GetFunction(CkMailManLibId,"CkMailManU_SmtpSendRawCommandAsyncW")
   Global MailManSshAuthenticatePk.cklMsi = GetFunction(CkMailManLibId,"CkMailManU_SshAuthenticatePkW")
   Global MailManSshAuthenticatePkAsync.ckiMsi = GetFunction(CkMailManLibId,"CkMailManU_SshAuthenticatePkAsyncW")
@@ -1018,3 +1018,9 @@ CompilerEndIf
   Procedure.i ckVerifySmtpLoginAsync(obj.i) :  ProcedureReturn MailManVerifySmtpLoginAsync(obj) :  EndProcedure
 EndModule
 
+
+; IDE Options = PureBasic 6.40 (Windows - x64)
+; Folding = -------------------------------------------------------
+; EnableThread
+; EnableXP
+; DPIAware

@@ -141,6 +141,8 @@ Module CkJsonObject
   PrototypeC.l cklMs(obj.i, arg1.s)
   PrototypeC.l cklMls(obj.i, arg1.l, arg2.s)
   PrototypeC.i ckiMl(obj.i, arg1.l)
+  PrototypeC.i ckiMil(obj.i, arg1.i, arg2.l)
+  PrototypeC.i ckiMsssls(obj.i, arg1.s, arg2.s, arg3.s, arg4.l, arg5.s)
   PrototypeC.l cklMlsi(obj.i, arg1.l, arg2.s, arg3.i)
   PrototypeC.l cklMlss(obj.i, arg1.l, arg2.s, arg3.s)
   PrototypeC.l cklMss(obj.i, arg1.s, arg2.s)
@@ -222,13 +224,13 @@ CompilerEndIf
   Global JsonObjectDelete.cklMs = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_DeleteW")
   Global JsonObjectDeleteAt.cklMl = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_DeleteAtW")
   Global JsonObjectDtOf.cklMsli = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_DtOfW")
-  Global JsonObjectEmit.cklM = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_emitW")
+  Global JsonObjectEmit.ckiM = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_emitW")
   Global JsonObjectEmitBd.cklMi = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_EmitBdW")
   Global JsonObjectEmitSb.cklMi = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_EmitSbW")
-  Global JsonObjectEmitWithSubs.cklMil = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_emitWithSubsW")
+  Global JsonObjectEmitWithSubs.ckiMil = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_emitWithSubsW")
   Global JsonObjectFindObjectWithMember.ckiMs = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_FindObjectWithMemberW")
   Global JsonObjectFindRecord.ckiMsssl = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_FindRecordW")
-  Global JsonObjectFindRecordString.cklMsssls = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_findRecordStringW")
+  Global JsonObjectFindRecordString.ckiMsssls = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_findRecordStringW")
   Global JsonObjectFirebaseApplyEvent.cklMss = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_FirebaseApplyEventW")
   Global JsonObjectFirebasePatch.cklMss = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_FirebasePatchW")
   Global JsonObjectFirebasePut.cklMss = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_FirebasePutW")
@@ -246,7 +248,7 @@ CompilerEndIf
   Global JsonObjectLoadPredefined.cklMs = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_LoadPredefinedW")
   Global JsonObjectLoadSb.cklMi = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_LoadSbW")
   Global JsonObjectMoveMember.cklMll = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_MoveMemberW")
-  Global JsonObjectNameAt.cklMl = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_nameAtW")
+  Global JsonObjectNameAt.ckiMl = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_nameAtW")
   Global JsonObjectObjectAt.ckiMl = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_ObjectAtW")
   Global JsonObjectObjectOf.ckiMs = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_ObjectOfW")
   Global JsonObjectPredefine.cklMs = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_PredefineW")
@@ -264,8 +266,8 @@ CompilerEndIf
   Global JsonObjectSetStringAt.cklMls = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_SetStringAtW")
   Global JsonObjectSetStringOf.cklMss = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_SetStringOfW")
   Global JsonObjectSizeOfArray.cklMs = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_SizeOfArrayW")
-  Global JsonObjectStringAt.cklMl = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_stringAtW")
-  Global JsonObjectStringOf.cklMs = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_stringOfW")
+  Global JsonObjectStringAt.ckiMl = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_stringAtW")
+  Global JsonObjectStringOf.ckiMs = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_stringOfW")
   Global JsonObjectStringOfSb.cklMsi = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_StringOfSbW")
   Global JsonObjectSwap.cklMll = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_SwapW")
   Global JsonObjectTypeAt.cklMl = GetFunction(CkJsonObjectLibId,"CkJsonObjectU_TypeAtW")
@@ -397,3 +399,9 @@ CompilerEndIf
   Procedure.l ckWriteFile(obj.i, path.s) :  ProcedureReturn JsonObjectWriteFile(obj, path) :  EndProcedure
 EndModule
 
+
+; IDE Options = PureBasic 6.40 (Windows - x64)
+; Folding = ---------------------
+; EnableThread
+; EnableXP
+; DPIAware

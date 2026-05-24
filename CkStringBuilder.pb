@@ -87,6 +87,12 @@ Module CkStringBuilder
   PrototypeC.l cklMlssll(obj.i, arg1.l, arg2.s, arg3.s, arg4.l, arg5.l)
   PrototypeC.l cklMss(obj.i, arg1.s, arg2.s)
   PrototypeC.l cklMsssl(obj.i, arg1.s, arg2.s, arg3.s, arg4.l)
+  PrototypeC.i ckiM(obj.i)
+  PrototypeC.i ckiMss(obj.i, arg1.s, arg2.s)
+  PrototypeC.i ckiMsl(obj.i, arg1.s, arg2.l)
+  PrototypeC.i ckiMsss(obj.i, arg1.s, arg2.s, arg3.s)
+  PrototypeC.i ckiMlsll(obj.i, arg1.l, arg2.s, arg3.l, arg4.l)
+  PrototypeC.i ckiMll(obj.i, arg1.l, arg2.l)
   PrototypeC.i CkStringBuilderCreate()
   PrototypeC CkStringBuilderDispose(obj.i)
 
@@ -133,14 +139,14 @@ CompilerEndIf
   Global StringBuilderEncode.cklMss = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_EncodeW")
   Global StringBuilderEndsWith.cklMsl = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_EndsWithW")
   Global StringBuilderEntityDecode.cklM = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_EntityDecodeW")
-  Global StringBuilderGetAfterBetween.cklMsss = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getAfterBetweenW")
-  Global StringBuilderGetAfterFinal.cklMsl = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getAfterFinalW")
-  Global StringBuilderGetAsString.cklM = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getAsStringW")
-  Global StringBuilderGetBefore.cklMsl = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getBeforeW")
-  Global StringBuilderGetBetween.cklMss = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getBetweenW")
-  Global StringBuilderGetEncoded.cklMss = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getEncodedW")
-  Global StringBuilderGetNth.cklMlsll = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getNthW")
-  Global StringBuilderLastNLines.cklMll = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_lastNLinesW")
+  Global StringBuilderGetAfterBetween.ckiMsss = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getAfterBetweenW")
+  Global StringBuilderGetAfterFinal.ckiMsl = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getAfterFinalW")
+  Global StringBuilderGetAsString.ckiM = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getAsStringW")
+  Global StringBuilderGetBefore.ckiMsl = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getBeforeW")
+  Global StringBuilderGetBetween.ckiMss = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getBetweenW")
+  Global StringBuilderGetEncoded.ckiMss = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getEncodedW")
+  Global StringBuilderGetNth.ckiMlsll = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_getNthW")
+  Global StringBuilderLastNLines.ckiMll = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_lastNLinesW")
   Global StringBuilderLoadFile.cklMss = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_LoadFileW")
   Global StringBuilderObfuscate.ckvM = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_ObfuscateW")
   Global StringBuilderPrepend.cklMs = GetFunction(CkStringBuilderLibId,"CkStringBuilderU_PrependW")
@@ -234,3 +240,9 @@ CompilerEndIf
   Procedure.l ckWriteFileIfModified(obj.i, path.s, charset.s, emitBom.l) :  ProcedureReturn StringBuilderWriteFileIfModified(obj, path, charset, emitBom) :  EndProcedure
 EndModule
 
+
+; IDE Options = PureBasic 6.40 (Windows - x64)
+; Folding = ------------
+; EnableThread
+; EnableXP
+; DPIAware

@@ -37,6 +37,8 @@ Module CkHtmlToText
   PrototypeC.l cklMss(obj.i, arg1.s, arg2.s)
   PrototypeC.l cklMs(obj.i, arg1.s)
   PrototypeC.l cklMsss(obj.i, arg1.s, arg2.s, arg3.s)
+  PrototypeC.i ckiMs(obj.i, arg1.s)
+  PrototypeC.i ckiMss(obj.i, arg1.s, arg2.s)
   PrototypeC.i CkHtmlToTextCreate()
   PrototypeC CkHtmlToTextDispose(obj.i)
 
@@ -78,9 +80,9 @@ CompilerEndIf
   Global HtmlToTextVerboseLogging.cklPropGet = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_getVerboseLoggingW")
   Global HtmlToTextPSetVerboseLogging.cklPropSet = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_putVerboseLoggingW")
   Global HtmlToTextVersion.cksPropGet = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_versionW")
-  Global HtmlToTextReadFileToString.cklMss = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_readFileToStringW")
+  Global HtmlToTextReadFileToString.ckiMss = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_readFileToStringW")
   Global HtmlToTextSaveLastError.cklMs = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_SaveLastErrorW")
-  Global HtmlToTextToText.cklMs = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_toTextW")
+  Global HtmlToTextToText.ckiMs = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_toTextW")
   Global HtmlToTextUnlockComponent.cklMs = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_UnlockComponentW")
   Global HtmlToTextWriteStringToFile.cklMsss = GetFunction(CkHtmlToTextLibId,"CkHtmlToTextU_WriteStringToFileW")
 CompilerIf #PB_Compiler_ExecutableFormat = #PB_Compiler_DLL
@@ -112,3 +114,9 @@ CompilerEndIf
   Procedure.l ckWriteStringToFile(obj.i, stringToWrite.s, filename.s, charset.s) :  ProcedureReturn HtmlToTextWriteStringToFile(obj, stringToWrite, filename, charset) :  EndProcedure
 EndModule
 
+
+; IDE Options = PureBasic 6.40 (Windows - x64)
+; Folding = ------
+; EnableThread
+; EnableXP
+; DPIAware

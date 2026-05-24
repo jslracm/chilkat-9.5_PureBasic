@@ -31,6 +31,7 @@ Module CkMessageSet
   PrototypeC.l cklMs(obj.i, arg1.s)
   PrototypeC.l cklMi(obj.i, arg1.i)
   PrototypeC.l cklM(obj.i)
+  PrototypeC.i ckiM(obj.i)
   PrototypeC.i CkMessageSetCreate()
   PrototypeC CkMessageSetDispose(obj.i)
 
@@ -67,8 +68,8 @@ CompilerEndIf
   Global MessageSetInsertId.ckvMl = GetFunction(CkMessageSetLibId,"CkMessageSetU_InsertIdW")
   Global MessageSetLoadTaskResult.cklMi = GetFunction(CkMessageSetLibId,"CkMessageSetU_LoadTaskResultW")
   Global MessageSetRemoveId.ckvMl = GetFunction(CkMessageSetLibId,"CkMessageSetU_RemoveIdW")
-  Global MessageSetToCommaSeparatedStr.cklM = GetFunction(CkMessageSetLibId,"CkMessageSetU_toCommaSeparatedStrW")
-  Global MessageSetToCompactString.cklM = GetFunction(CkMessageSetLibId,"CkMessageSetU_toCompactStringW")
+  Global MessageSetToCommaSeparatedStr.ckiM = GetFunction(CkMessageSetLibId,"CkMessageSetU_toCommaSeparatedStrW")
+  Global MessageSetToCompactString.ckiM = GetFunction(CkMessageSetLibId,"CkMessageSetU_toCompactStringW")
 CompilerIf #PB_Compiler_ExecutableFormat = #PB_Compiler_DLL
    EndProcedure
 CompilerEndIf
@@ -90,3 +91,9 @@ CompilerEndIf
   Procedure.s ckToCompactString(obj.i) :  ProcedureReturn PeekS(MessageSetToCompactString(obj)) :  EndProcedure
 EndModule
 
+
+; IDE Options = PureBasic 6.40 (Windows - x64)
+; Folding = ----
+; EnableThread
+; EnableXP
+; DPIAware

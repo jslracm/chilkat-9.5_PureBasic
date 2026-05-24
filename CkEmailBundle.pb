@@ -88,7 +88,7 @@ CompilerEndIf
   Global EmailBundleFindByHeader.ckiMss = GetFunction(CkEmailBundleLibId,"CkEmailBundleU_FindByHeaderW")
   Global EmailBundleGetEmail.ckiMl = GetFunction(CkEmailBundleLibId,"CkEmailBundleU_GetEmailW")
   Global EmailBundleGetUidls.ckiM = GetFunction(CkEmailBundleLibId,"CkEmailBundleU_GetUidlsW")
-  Global EmailBundleGetXml.cklM = GetFunction(CkEmailBundleLibId,"CkEmailBundleU_getXmlW")
+  Global EmailBundleGetXml.ckiM = GetFunction(CkEmailBundleLibId,"CkEmailBundleU_getXmlW")
   Global EmailBundleLoadTaskResult.cklMi = GetFunction(CkEmailBundleLibId,"CkEmailBundleU_LoadTaskResultW")
   Global EmailBundleLoadXml.cklMs = GetFunction(CkEmailBundleLibId,"CkEmailBundleU_LoadXmlW")
   Global EmailBundleLoadXmlString.cklMs = GetFunction(CkEmailBundleLibId,"CkEmailBundleU_LoadXmlStringW")
@@ -135,3 +135,9 @@ CompilerEndIf
   Procedure ckSortBySubject(obj.i, ascending.l) :  ProcedureReturn EmailBundleSortBySubject(obj, ascending) :  EndProcedure
 EndModule
 
+
+; IDE Options = PureBasic 6.40 (Windows - x64)
+; Folding = -------
+; EnableThread
+; EnableXP
+; DPIAware
